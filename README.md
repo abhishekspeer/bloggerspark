@@ -1,26 +1,23 @@
-# Bloggers-Park
+# Bloggers Park
 
-started app
-added app in settings.py
-created models
-made model migrations and migrated
-include/import the model in admin.py to access them
-register the imported models via admin.site.register(Model)
-created a superuser via manage.py createsuperuser to get access as admin
-run server to check if admin includes those models
-added a Model(post in this case) from admin - created an INSTANCE/OBJECT
-deplyment:
-set up git, github
-added a .git folder and .gitignore
-we added db.sqlite in gitignore as we'll use the server of pythonanywhere
-setting up git and linking files to github repo
-working with bash
-api token added from pythonanywhere. deployed.
-Urls:
-made a seperate urls.py to keep the urls of the app at one place
-listed out the urls at that script
-include them with main urls.py using path('', include(package.module)) so when '' address is requested django looks at blog/urls.py for urlconfigs using path ('/url', view, name = 'urlname')
-views: the logic that that connects models with templates
-defined a view
-added a template\blog directory inside the app directory
-made a landing template    
+## Installation
+1. Clone or download the repository. 
+2. Create a new virtual environment for the project.
+    ```bash
+    virtualenv venv
+    source venv/bin/activate
+    ```
+3. Install required python libraries giving in the requirements.txt file.
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. Run Django migrations.
+    
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+5. Start the application.
+    ```bash
+    python manage.py runserver
+    ```
