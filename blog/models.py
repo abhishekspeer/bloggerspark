@@ -16,10 +16,10 @@ class Post(models.Model):
     title = models.CharField(max_length = 200) # CharField for limited text
     text = models.TextField() # TextField for unlimited text
     created_date = models.DateTimeField(default=timezone.now) # DateTimeField for date and time
-    publised_date = models.DateTimeField(blank=True, null=True)
+    published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
-        self.publised_date = timezone.now()
+        self.published_date = timezone.now()
         self.save()
 
     def __str__(self):
