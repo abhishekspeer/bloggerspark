@@ -4,8 +4,9 @@ from django.utils import timezone
 from .forms import PostForm
 from django.shortcuts import redirect
 # Create your views here.
+
 '''
-A view is a place where we put the "logic" of our application. It will request
+A view is a script where we put the "logic" of our application. It will request
 information from the model you created before and pass it to a template
 tells template how to use data from models
 '''
